@@ -34,14 +34,6 @@ app.get('/', function(req, res){
     console.log(posts);
     res.render('index', {posts: posts});
   })
-  // Post.find({}, function(err, posts){
-  //   if(err){
-  //     console.log(err);
-  //     console.log('summin broke');
-  //   }else{
-  //     res.render('index', {posts: posts});
-  //   }
-  // })
 });
 
 app.post('/comments/:id', function(req, res){
